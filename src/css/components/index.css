@@ -30,6 +30,23 @@
     border-radius: 5px;
 }
 
+.fakebutton2{
+    display: inline-block;
+    padding: 15px 30px 15px 30px;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    border: solid white;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.fakebutton21{
+    display: flex;
+    justify-content: center;
+}
+
 .fakebutton:hover {
     background-color: #3A3734;
 }
@@ -88,6 +105,41 @@ p{
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
+}
+
+.dunkel{
+    background-color: black;
+}
+
+.white{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 900;
+font-size: 36px;
+line-height: 34px;
+color: #FFFFFF;
+}
+
+.bildkaffee{
+    height: 25vh;
+    width: auto;
+    background-color: white;
+}
+
+.icons img{
+    height: 2vh;
+    width: auto;
+    filter: brightness(0) invert(1);
+}
+
+.product{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.dunkel{
+    padding: 20px;
 }
 
 @media (min-width: 576px) { 
