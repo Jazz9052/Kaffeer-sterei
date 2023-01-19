@@ -1,22 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index Page</title>
-    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="./css/components/basis.css" />
+    <link rel="stylesheet" href="./css/components/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/css?family=Oregano"
       rel="stylesheet"
     />
   </head>
   <body>
-    {{> header }}
-    <h1>Hello World Test!</h1>
     <main>
-      <a href="/sub-page/">Link to Subpage</a>
-      <div>Home</div>
+      <div class="container">
+        {{> header }}
+        <img src="./images/FEND-Coffee-latte-art-3.png" alt="Bild mit drei Kaffeetassen" class="dreitassen">
+        <div class="centered">
+          <h1 class="rustica">Rustica</h1>
+          <p class="klein">Bio und Fair seit 1991</p>
+        </div>
+        <a href="./sub-page/shop.html" class="fakebutton">zum Shop</a>
+      </div>
+      <div class="text1">
+        <div>
+          <h2>Rösterei & Café</h2>
+          <p>Kaffee aus Kiel, direkt gehandelt und geröstet in der eigenen Rösterei, serviert im gemütlichen Café in der Innenstadt.</p>
+          <div class="adresse">
+            <p>Komm uns besuchen!<br>Fraunhoferstr. 13, Kiel</p>
+            <p>Mo – Fr 8–18 Uhr<br>Sa 11–18 Uhr</p>
+          </div>
+        </div>
+        <img src="./images/FEND-Coffee-shop.png" alt="Kaffeeladen">
+      </div>
+      <div class="text2">
+        <div>
+          <h2>Bio und Fair</h2>
+          <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Und das alles in bester Bio Qualität</p>
+          <img src="./images/FEND-coffee-plant.png" alt="Bild von Kaffeepflanze">
+        </div>
+      </div>
     </main>
-    <script src="/js/index.js" type="module"></script>
   </body>
 </html>

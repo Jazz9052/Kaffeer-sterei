@@ -1,0 +1,56 @@
+.rustica{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 21px;
+    text-align: center;
+    margin-block-end: 0.4em;
+}
+
+.klein{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+}
+
+body{
+    margin: 0;
+    position: absolute;
+}
+
+.header {
+    position: absolute;
+    width: 95vw;
+    margin: 1em 2.5vw;
+}
+
+.headerm img {
+    width: 2em;
+    height: 2em;
+    filter: brightness(0) invert(1);
+}
+
+.headerm{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (min-width: 992px) {
+    .navigation {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        position: absolute;
+        top: 10%;
+        color: white;
+        gap: 50px;
+        z-index: 1
+    }
+}
+
+
+
