@@ -60,6 +60,19 @@
     outline: none;
 }
 
+.fakebutton2:hover {
+    background-color: #3A3734;
+}
+
+.fakebutton2:focus {
+    outline: 2px white dashed;
+}
+
+.fakebutton2:active {
+    background-color: #D7BE9D;
+    outline: none;
+}
+
 .adresse{
     display: flex;
     justify-content: flex-start;
@@ -99,6 +112,15 @@ h2{
     line-height: 34px;
 }
 
+h2w{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 34px;
+    color: #FFFFFF;
+}
+
 p{
     font-family: 'Roboto';
     font-style: normal;
@@ -107,17 +129,26 @@ p{
     line-height: 18px;
 }
 
+pw{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
 .dunkel{
     background-color: black;
 }
 
 .white{
     font-family: 'Roboto';
-font-style: normal;
-font-weight: 900;
-font-size: 36px;
-line-height: 34px;
-color: #FFFFFF;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 34px;
+    color: #FFFFFF;
 }
 
 .bildkaffee{
@@ -140,6 +171,25 @@ color: #FFFFFF;
 
 .dunkel{
     padding: 20px;
+}
+
+.bildherkunft img{
+    object-fit: cover;
+    width: 100vw;
+    height: 50vh; 
+    filter: brightness(0.5);
+}
+
+.bildherkunft{
+    position: relative;
+    text-align: center;
+    color: white;
+    min-height: 230px;
+}
+
+.mehr{
+    color: white;
+    text-decoration: none;
 }
 
 @media (min-width: 576px) { 
