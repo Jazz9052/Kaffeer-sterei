@@ -47,6 +47,17 @@
     justify-content: center;
 }
 
+.fakebutton3{
+   
+    display: block;
+    padding: 15px 50px 15px 50px;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
 .fakebutton:hover {
     background-color: #3A3734;
 }
@@ -153,8 +164,12 @@ pw{
 
 .bildkaffee{
     height: 25vh;
-    width: auto;
     background-color: white;
+}
+
+.bildkaffee2{
+    height: 45vh;
+    object-fit: contain;
 }
 
 .icons img{
@@ -190,6 +205,23 @@ pw{
 .mehr{
     color: white;
     text-decoration: none;
+}
+
+.inhalt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gridsymbole{
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    grid-gap:5px;
+}
+
+.grid-item{
+    margin: 0 5vw;
+    text-align: center;
 }
 
 @media (min-width: 576px) { 
