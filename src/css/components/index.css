@@ -56,6 +56,7 @@
     background-color: black;
     border-radius: 5px;
     margin-bottom: 1em;
+    margin-top: 3em;
 }
 
 .fakebutton:hover {
@@ -222,6 +223,10 @@ pw{
 .grid-item{
     margin: 0 5vw;
     text-align: center;
+}
+
+#kommvorbei{
+    margin-left: 1em;
 }
 
 @media (min-width: 576px) { 
