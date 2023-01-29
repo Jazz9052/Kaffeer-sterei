@@ -1,3 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    position: absolute;
+}
+
+.ueberlappung{
+    position: relative;
+}
+
+.ueberlappung .bohne {
+    position: absolute;
+    width: 1.2em;
+    height: 1.2em;
+    padding: 0.6em;
+    filter: brightness(0) invert(1);
+}
+
+.ueberlappung .raute {
+    position: absolute;
+    width: 2.4em;
+    height: 2.4em;
+    filter: brightness(0) invert(1);
+}
+
 .rustica{
     font-family: 'Roboto';
     font-style: normal;
@@ -5,7 +34,7 @@
     font-size: 96px;
     line-height: 21px;
     text-align: center;
-    margin-block-end: 0.4em;
+    margin-block-end: 0.5em;
 }
 
 .klein{
@@ -39,15 +68,11 @@
     margin-block-end: 0em;
 }
 
-body{
-    margin: 0;
-    position: absolute;
-}
-
 .header {
     position: absolute;
     width: 95vw;
     margin: 1em 2.5vw;
+    z-index: 1;
 }
 
 .headerm img {
@@ -59,6 +84,7 @@ body{
 .headerm{
     display: flex;
     justify-content: space-between;
+    margin: 0 1em 0 1em;
 }
 
 @media (min-width: 992px) {
@@ -74,5 +100,69 @@ body{
     }
 }
 
+.footer1{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin-top: 2em;
+}
+
+.footer2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    margin: 0.3em 0 2em 0;
+}
+
+.footer{
+    background-color: black;
+    display:flex; 
+    flex-direction:column; 
+    padding: 4em 2em;
+}
+
+.footer3{
+    display: flex; 
+    gap: 2.5em;
+}
+
+
+
+.links{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+.rechts{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+}
+
+.oben1{
+    margin-bottom: 2em;
+}
+
+.logo{
+    width: 2em;
+    height: 2em;
+    filter: brightness(0) invert(1);
+}
+
+.text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
 
 

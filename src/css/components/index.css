@@ -15,6 +15,7 @@
     object-fit: cover;
     width: 100vw;
     height: 75vh;
+    filter: brightness(0.7);
 }
 
 .fakebutton{
@@ -26,7 +27,7 @@
     padding: 15px 50px 15px 50px;
     color: white;
     text-decoration: none;
-    background-color: black;
+    background-color: #1A1A1A;
     border-radius: 5px;
 }
 
@@ -35,11 +36,10 @@
     padding: 15px 30px 15px 30px;
     color: white;
     text-decoration: none;
-    background-color: black;
+    background-color: #1A1A1A;
     border: solid white;
     border-radius: 5px;
-    margin-top: 20px;
-    margin-bottom: 30px;
+    margin: 3em 0 3.5em 0;
 }
 
 .fakebutton21{
@@ -53,37 +53,24 @@
     padding: 15px 50px 15px 50px;
     color: white;
     text-decoration: none;
-    background-color: black;
+    background-color: #1A1A1A;
     border-radius: 5px;
-    margin-bottom: 1em;
-    margin-top: 3em;
+    margin: 3em 0 3.5em 0;
 }
 
-.fakebutton:hover {
+.fakebutton-interactions:hover {
     background-color: #3A3734;
 }
 
-.fakebutton:focus {
+.fakebutton-interactions:focus {
     outline: 2px white dashed;
 }
 
-.fakebutton:active {
+.fakebutton-interactions:active {
     background-color: #D7BE9D;
     outline: none;
 }
 
-.fakebutton2:hover {
-    background-color: #3A3734;
-}
-
-.fakebutton2:focus {
-    outline: 2px white dashed;
-}
-
-.fakebutton2:active {
-    background-color: #D7BE9D;
-    outline: none;
-}
 
 .adresse{
     display: flex;
@@ -101,7 +88,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    margin: 5vw;
+    margin: 4em 1.5em 0em 1.5em;
 }
 
 .text2 img{
@@ -113,7 +100,7 @@
 .text2{
     display: flex;
     flex-wrap: wrap;
-    margin: 5vw;
+    margin: 4em 1.5em 4em 1.5em;
 }
 
 h2{
@@ -122,6 +109,7 @@ h2{
     font-weight: 900;
     font-size: 36px;
     line-height: 34px;
+    margin-bottom: 0.5em;
 }
 
 h2w{
@@ -139,6 +127,7 @@ p{
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
+    margin-bottom: 1em;
 }
 
 pw{
@@ -151,7 +140,7 @@ pw{
 }
 
 .dunkel{
-    background-color: black;
+    background-color:#1A1A1A;
 }
 
 .white{
@@ -161,6 +150,7 @@ pw{
     font-size: 36px;
     line-height: 34px;
     color: #FFFFFF;
+    margin: 1.5em 0 1.5em 0;
 }
 
 .bildkaffee{
@@ -171,6 +161,7 @@ pw{
 .bildkaffee2{
     height: 45vh;
     object-fit: contain;
+    margin: 2em 0 2.5em 0;
 }
 
 .icons img{
@@ -194,6 +185,7 @@ pw{
     width: 100vw;
     height: 50vh; 
     filter: brightness(0.5);
+    margin-bottom: 3.5em;
 }
 
 .bildherkunft{
@@ -226,10 +218,11 @@ pw{
 }
 
 #kommvorbei{
-    margin-left: 1em;
+    margin: 0em 0em 1em 0.5em;
+
 }
 
-@media (min-width: 576px) { 
+@media (min-width: 350px) { 
     .dreitassen{
         /* height: 75vh; */
     }
