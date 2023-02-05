@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 body{
@@ -8,24 +9,9 @@ body{
     position: absolute;
 }
 
-.ueberlappung{
-    position: relative;
-}
-
-.ueberlappung .bohne {
-    position: absolute;
-    width: 1.2em;
-    height: 1.2em;
-    padding: 0.6em;
-    filter: brightness(0) invert(1);
-}
-
-.ueberlappung .raute {
-    position: absolute;
-    width: 2.4em;
-    height: 2.4em;
-    filter: brightness(0) invert(1);
-}
+.header1{
+    display: none;
+} 
 
 .rustica{
     font-family: 'Roboto';
@@ -87,6 +73,49 @@ body{
     margin: 0 1em 0 1em;
 }
 
+.header1 {
+    position: absolute;
+    width: 95vw;
+    margin: 1em 2.5vw;
+    z-index: 1;
+}
+
+.warenkorb{
+    width: 17px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+}
+
+.headerm1{
+    display: flex;
+    margin: 0 1em 0 1em;
+}
+
+.spacer {
+    flex-grow: 1;
+}
+
+.headerdestop{
+    display: flex;
+    gap: 60px;
+    margin-right: 20px;
+}
+
+.logosh{
+    height: 35px;
+    width: 35px;
+    filter: brightness(0) invert(1);
+}
+
+.herkunftunderline{
+    text-decoration: underline;
+}
+
+.shoph{
+    text-decoration: underline;
+}
+
+
 @media (min-width: 992px) {
     .navigation {
         width: 100%;
@@ -98,8 +127,16 @@ body{
         gap: 50px;
         z-index: 1
     }
+
+
+.header{
+    display:none;
 }
 
+.header1{
+    display: unset;
+}
+}
 .footer1{
     font-family: 'Roboto';
     font-style: normal;
@@ -107,7 +144,7 @@ body{
     font-size: 24px;
     line-height: 28px;
     color: #FFFFFF;
-    margin-top: 2em;
+    margin-top: 1em;
 }
 
 .footer2{
@@ -122,31 +159,26 @@ body{
 
 .footer{
     background-color: black;
-    display:flex; 
-    flex-direction:column; 
     padding: 4em 2em;
 }
 
-.footer3{
-    display: flex; 
-    gap: 2.5em;
-}
-
-
-
-.links{
-    display: flex;
-    flex-direction: column;
-    align-content: flex-start;
-}
-
-.rechts{
-    display: flex;
-    flex-direction: column;
-    align-content: flex-end;
+.ID{
+    min-width: 140px;
 }
 
 .oben1{
+    min-width: 140px;
+}
+
+.zeile1{
+    display: flex;
+    gap: 50px;
+    margin-bottom: 2em;
+}
+
+.zeile2{
+    display: flex; 
+    gap: 50px; 
     margin-bottom: 2em;
 }
 
@@ -165,4 +197,49 @@ body{
     color: #FFFFFF;
 }
 
+.logos{
+    height: 5vh;
+    width: auto;
+    display: block;
+    filter: brightness(0) invert(1);
+    text-align: left;
+}
+
+@media (min-width: 992px) {
+
+    .footer{
+        display: block;
+        padding: 4em 6em;
+    }
+
+    .footer1{
+        margin-top: 0;
+    }
+
+    .logos{
+        max-width: 80vw;
+        margin-bottom: 1em;
+    }
+
+    .footerflex{
+        max-width: 80vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .zeile1{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .zeile2{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 20vw;
+    }
+
+
+}
 

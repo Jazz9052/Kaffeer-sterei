@@ -13,7 +13,7 @@
 
 .dreitassen {
     object-fit: cover;
-    width: 100vw;
+    width: 100%;
     height: 75vh;
     filter: brightness(0.7);
 }
@@ -50,12 +50,14 @@
 .fakebutton3{
    
     display: block;
-    padding: 15px 50px 15px 50px;
+    padding: 15px 40px 15px 40px;
+    max-width: 100px;
     color: white;
     text-decoration: none;
     background-color: #1A1A1A;
     border-radius: 5px;
     margin: 3em 0 3.5em 0;
+    text-align: center;
 }
 
 .fakebutton-interactions:hover {
@@ -70,7 +72,6 @@
     background-color: #D7BE9D;
     outline: none;
 }
-
 
 .adresse{
     display: flex;
@@ -154,7 +155,8 @@ pw{
 }
 
 .bildkaffee{
-    height: 25vh;
+    height: 208px;
+    width: 155px;
     background-color: white;
 }
 
@@ -180,9 +182,13 @@ pw{
     padding: 20px;
 }
 
+.gridbild{
+    text-align: center;
+}
+
 .bildherkunft img{
     object-fit: cover;
-    width: 100vw;
+    width: 100%;
     height: 50vh; 
     filter: brightness(0.5);
     margin-bottom: 3.5em;
@@ -206,6 +212,10 @@ pw{
     align-items: center;
 }
 
+.gridbutton{
+    text-align: -webkit-center;
+}
+
 .gridsymbole{
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(3, 1fr);
@@ -224,7 +234,7 @@ pw{
 
 @media (min-width: 350px) { 
     .dreitassen{
-        /* height: 75vh; */
+         height: 75vh; 
     }
  }
 
@@ -232,4 +242,74 @@ pw{
     .dreitassen{
         height: 65vh;
     }
+
+    .text1{
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        gap: 20vw;
+        margin: 4em 5em 0em 5em;
+    }
+
+    .text1 img{
+        width: 30vw;
+    }
+
+    .text2{
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+        gap: 10vw;
+        align-items: center;
+        margin: 4em 5em 0em 5em;
+    }
+
+    .text2 img{
+        width: 30vw;
+    }
+
+    .white{
+        max-width: 300px;
+        margin-left: 2em;
+    }
+
+    .bildkaffee{
+        width: 20vw;
+        height: auto;
+    }
+
+    .dunkel{
+        margin-top: 8em;
+    }
+
+    .product{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .pw{
+        max-width: 300px;
+    }
+
+    .gridsymbole{
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .grid-item{
+        margin: 3vh 1vw;
+        text-align: center;
+    }
+
+    .gridbild{
+        display: flex;
+        justify-content: baseline;
+        gap: 10vw;
+    }
+
+    #kommvorbei{
+        margin: 0em 0em 1em 2em;
+    }
+
 }
