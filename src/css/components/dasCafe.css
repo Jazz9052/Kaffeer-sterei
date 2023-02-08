@@ -55,3 +55,35 @@ p{
 #uever{
     max-width: 300px;
 }
+
+.srechts img{
+    max-width: 40vw;
+}
+
+.srechts{
+    display: flex;
+    flex-direction: column;
+}
+
+.slinks img{
+    max-width: 40vw;
+    margin-left: 24px;
+}
+
+.slinks{
+    display: flex;
+    flex-direction: column;
+}
+
+.spaltenbilder img{
+    margin-bottom: 10px;
+}
+
+.spaltenbilder{
+    display:flex;
+    gap: 20px;
+}
+
+#kommvorbei{
+    margin: 1.5em 0em 1em 0.5em;
+}
