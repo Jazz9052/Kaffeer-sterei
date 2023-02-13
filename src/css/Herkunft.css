@@ -50,3 +50,88 @@ p{
     line-height: 18px;
     margin-bottom: 1em;
 }
+
+.video {
+    width: 87vw;
+    display: block;
+    margin: 0 auto;
+}
+
+.text1 img{
+    height: auto;
+    width: 65vw;
+    padding-top: 2vh;
+}
+
+.text1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin: 4em 1.5em 0em 1.5em;
+}
+
+.text3 img{
+    height: auto;
+    width: 60vw;
+    padding-top: 2vh;
+}
+
+.text3{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4em 1.5em 4em 1.5em;
+}
+
+@media (min-width: 992px) {
+    .bohnen {
+        height: 75vh;
+        filter: unset;
+        margin: auto;
+        object-position: 50% 30%;
+        scale: unset;
+    }
+
+    .text2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 6em;
+    }
+
+    .mitte{
+        max-width: 40%;
+    }
+
+    #uever{
+        max-width: unset;
+        display: inline-block;
+    }
+
+    .video{
+        width: 70%;
+    }
+
+    .text1 img{
+        width: 50vw;
+        margin-top: 5em;
+    }
+
+    .text1{
+        justify-content: unset;
+        flex-wrap: nowrap;
+        gap: 10vw;
+        margin: 4em 5em 0em 5em;
+    }
+
+    .text3{
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+        gap: 10vw;
+        margin: 8em 15em 5em 10em;
+    }
+
+    .text3 img{
+        width: 30vw;
+        margin-top: 5em;
+    }
+}
