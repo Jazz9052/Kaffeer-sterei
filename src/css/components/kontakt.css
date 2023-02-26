@@ -1,0 +1,17 @@
+.frarz img{
+    filter: brightness(0);
+}
+
+.frarz{
+    position: relative;
+    color: black;
+}
+
+.white-link {
+    color: black;
+    text-decoration: none;
+}
+
+.name{
+    display: block;
+}
